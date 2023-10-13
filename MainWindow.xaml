@@ -1,0 +1,52 @@
+﻿<Window x:Class="UI_naloga2_minmax.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UI_naloga2_minmax"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="461" Width="800">
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="FontSize" Value="10"></Setter>
+
+
+        </Style>
+    </Window.Resources>
+    <Grid x:Name="gumbi">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="247*"/>
+            <RowDefinition Height="198*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="AI" Content="zacne AI" HorizontalAlignment="Left" Margin="118,21,0,0" VerticalAlignment="Top" Height="44" Width="116" Click="Button_ZacneAI" Grid.Row="1"/>
+        <Button Content="Ponovna Igra" FontSize="15" HorizontalAlignment="Left" Margin="321,150,0,0" VerticalAlignment="Top" Height="48" Width="112" Click="Button_PonovnaIgra"/>
+        <Grid x:Name="okolje" Grid.RowSpan="2" Margin="10,0,-10,0">
+            <Grid x:Name="buttoni" Margin="0,10,520,166">
+                <Button Tag="0,0" Click="Button_Click" Content="" HorizontalAlignment="Left" Margin="93,88,0,0" VerticalAlignment="Top" Height="50" Width="50"/>
+                <Button Tag="0,1" Click="Button_Click" Content="" HorizontalAlignment="Left" Margin="143,88,0,0" VerticalAlignment="Top" Height="50" Width="50"/>
+                <Button Tag="0,2" Click="Button_Click" Content="" HorizontalAlignment="Left" Margin="193,88,0,0" VerticalAlignment="Top" Height="50" Width="50"/>
+                <Button Tag="1,0" Click="Button_Click" Content="" HorizontalAlignment="Left" Margin="93,138,0,0" VerticalAlignment="Top" Height="50" Width="50"/>
+                <Button Tag="1,1" Click="Button_Click" Content="" HorizontalAlignment="Left" Margin="143,138,0,0" VerticalAlignment="Top" Height="50" Width="50"/>
+                <Button Tag="1,2" Click="Button_Click" Content="" HorizontalAlignment="Left" Margin="193,138,0,0" VerticalAlignment="Top" Height="50" Width="50"/>
+                <Button Tag="2,0" Click="Button_Click" Content="" HorizontalAlignment="Left" Margin="93,188,0,0" VerticalAlignment="Top" Height="50" Width="50"/>
+                <Button Tag="2,1" Click="Button_Click" Content="" HorizontalAlignment="Left" Margin="143,188,0,0" VerticalAlignment="Top" Height="50" Width="50"/>
+                <Button Tag="2,2" Click="Button_Click" Content="" HorizontalAlignment="Left" Margin="193,188,0,0" VerticalAlignment="Top" Height="50" Width="50"/>
+            </Grid>
+
+            <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="381,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="igralec"/><LineBreak/><Run/></TextBlock>
+            <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="612,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="sl-si" Text="izenačeno"/><LineBreak/><Run Language="sl-si"/></TextBlock>
+            <TextBlock x:Name="zaslonZmage" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" Visibility="Hidden">HOLA</TextBlock>
+            <TextBlock x:Name="igralec"  FontSize="20" HorizontalAlignment="Left" Margin="405,311,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="0"/><LineBreak/><Run/></TextBlock>
+            <TextBlock x:Name="racunalnik" FontSize="20" HorizontalAlignment="Left" Margin="523,311,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="0"/><LineBreak/><Run/></TextBlock>
+            <TextBlock x:Name="izenaceno" FontSize="20" HorizontalAlignment="Left" Margin="651,316,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="0"/><LineBreak/><Run/></TextBlock>
+            <Grid x:Name="globina" Margin="0,0,0,326">
+                <ListBox Margin="263,29,0,0" Name="listBox1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="202" Height="66" SelectionChanged="ListBoxItem_Selected" SelectionMode="Single">
+                    <ListBoxItem Content="težavnost 1" IsSelected="True" ></ListBoxItem>
+                    <ListBoxItem Content="težavnost 5"></ListBoxItem>
+                    <ListBoxItem Content="težavnost 9"></ListBoxItem>
+                </ListBox>
+            </Grid>
+        </Grid>
+        <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="496,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Row="1"><Run Language="sl-si" Text="računalnik"/><LineBreak/><Run Language="sl-si"/><LineBreak/><Run/></TextBlock>
+    </Grid>
+</Window>
