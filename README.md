@@ -11,13 +11,12 @@ Tisti ki prične prvi ima znak "X", drugi pa "O"
 4. Ko hočete prazno polje za nov poskus, pritisnite gumb za novo igro.
 
 stopnjo 1 z lahkoto premagamo
-![image](https://github.com/zanivanusa/AI_TicTacToe/assets/60394411/c1c700f8-e8e4-44ff-8fd7-46bf7914c20c)
+![image](https://github.com/zanivanusa/Minimax_TicTacToe/assets/60394411/887af92a-c440-429d-a41d-4cab727efdcf)
 
 
 Pri stopnji 9 pa zmaga ni več mogoča
-![image](https://github.com/zanivanusa/AI_TicTacToe/assets/60394411/2123f123-9cf7-473b-b403-71558476884e)
-
 
 primer kjer začne računalnik
 
-![image](https://github.com/zanivanusa/AI_TicTacToe/assets/60394411/ec70320d-4409-4def-bf88-00ef0091b1ed)
+![image](https://github.com/zanivanusa/Minimax_TicTacToe/assets/60394411/a73e668f-63e5-4d37-a301-a72c490ba77a)
+
